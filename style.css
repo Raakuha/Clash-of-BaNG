@@ -1,0 +1,307 @@
+:root {
+    --teal: #2a7a6e;
+    --salmon: #e88570;
+    --cream: #e8e2d5;
+    --sage: #8fa882;
+    --red-muted: #8b3535;
+    --dark: #2d3a35;
+    --gold: #c8a84b;
+}
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    
+}
+@font-face {
+    font-family: 'SupercellMagic';
+    src: url('assets/Supercell-Magic.ttf') format('truetype');
+}
+
+h1, h2, h3 {
+    font-family: 'SupercellMagic', cursive;
+}
+body{
+    height: 200vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: var(--cream);
+}
+
+.navbar{
+    background-color: var(--dark);
+    position: fixed;
+    display: flex;
+    z-index:1000;
+    padding-right:0;
+    width: 100%;
+    align-items: center;
+    
+}
+button.Logo {
+    border: none;
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+.Logo{
+    width: 160px;
+    height:100px;
+    padding-left: 10px;
+}
+
+img.Logo{
+    height:100px;
+    width: auto;
+    object-fit: contain;
+}
+.navbar-Title{
+    background-color: aquamarine;
+    align-items: center;
+    display: flex;
+}
+
+.menu_page{
+    background-color: var(--salmon);
+    display: flex;
+    list-style-type: none;
+    gap: 40px;
+    align-items: center;
+    margin-left: 27.5vw  ;
+    font-family: fantasy;
+    padding:30px 40px;
+    justify-content: center;
+    
+}
+.menu_page a{
+    color: var(--cream);
+    text-decoration: dashed;
+}
+.menu_page a:hover{
+    color: var(--dark);
+}
+.Title-home{
+    padding-top:150px;
+    align-items: center;
+    text-align: center;
+  
+
+}
+
+.carousel{
+    position: relative;
+    overflow: hidden;
+    max-width: 860px;
+    
+    margin-left:25vw;
+    background-color: cadetblue;
+}
+
+.carouselContainer{
+   display: flex;
+   justify-content: center;
+   
+}
+
+
+.Ads-slide img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+.prev, .next{
+    font-size: 2rem;
+    padding: 20px 20px;
+    width: 70px;
+    height: 80px;
+    border-radius: 25%;
+    margin: 50px ;
+    
+}
+.prev{
+    margin-left: 30vh;
+}
+
+.btn-carousel{
+    display: flex;
+    margin:1vw 2vh;
+    padding: 2vw;
+    background-color: var(--red-muted);
+} 
+
+
+.title-PT{
+    display: flex;
+    justify-content: center;
+    padding: 30px 25px;
+    margin: 15px 15px;
+    background-color: var(--teal);
+    color: var(--cream);
+}
+
+.trendContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+}
+
+.Trends {
+    width: 180px;        
+    height: 180px;       
+    overflow: hidden;    
+    border-radius: 8px;  
+}
+
+.Trends img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;   
+}
+
+
+
+
+.search_troops {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 30px 20px;
+    margin-top: 20px;
+}
+
+.search-input {
+    width: 400px;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border: 2px solid #c8a84b;
+    border-radius: 25px;
+    outline: none;
+    font-family: 'SupercellMagic', cursive;
+}
+
+.search-input:focus {
+    border-color: #f4c430;
+    box-shadow: 0 0 8px rgba(244, 196, 48, 0.6);
+}
+
+.search-btn {
+    padding: 12px 24px;
+    background-color: #c8a84b;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-family: 'SupercellMagic', cursive;
+    transition: background-color 0.2s;
+}
+
+.search-btn:hover {
+    background-color: #f4c430;
+    color: #333;
+}
+
+
+
+
+.footer {
+    background-color: rgb(45, 44, 41);
+    color: white;
+    margin-top: 60px;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-title {
+    font-family: 'SupercellMagic', cursive;
+    font-size: 1.5rem;
+    color: #f4c430;
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+    margin: 15px 0;
+}
+
+.footer-links a {
+    color: #c8a84b;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+.footer-links a:hover {
+    color: #f4c430;
+}
+
+.footer-copy {
+    font-size: 0.8rem;
+    color: rgb(150, 150, 150);
+    margin-top: 15px;
+}
+
+
+.gallery-header {
+    padding-top: 130px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gallery-header p {
+    color: var(--teal);
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 24px;
+    padding: 0 40px 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.gallery-card {
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 2px solid var(--teal);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(42, 122, 110, 0.3);
+}
+
+.gallery-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.gallery-info {
+    padding: 12px 16px;
+    background-color: var(--dark);
+}
+
+.gallery-info h3 {
+    color: var(--salmon);
+    font-family: 'SupercellMagic', cursive;
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.gallery-info p {
+    color: var(--cream);
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
