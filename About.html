@@ -12,24 +12,178 @@
     <script src="script/main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-            <button class="Logo"><a href="Home.html">
-                <img class="Logo" src="assets/logofinale.png" alt="Ini adalah logo">
-            </a></button>
-        
-            
-        
-        
-            <ul class="menu_page">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Troops.html">Troops</a></li>
-            </ul>
-        
-            
-
+      <nav class="navbar">
+        <button class="Logo-btn"><a href="Home.html">
+            <img class="Logo" src="assets/logofinale.png" alt="Clash Of BaNG Logo">
+        </a></button>
+        <ul class="menu_page">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+        <div class="disc-wrap" id="discWrap">
+            <div class="disc" id="disc">
+                <div class="disc-label" id="discLabel">Log-in</div>
+            </div>
+            <div class="disc-controls">
+                <button class="disc-prev" id="discPrev" aria-label="Prev">&#8739;&#9664;</button>
+                <button class="disc-next" id="discNext" aria-label="Next">&#9654;&#8739;</button>
+            </div>
+            <div class="disc-pill">
+                <a class="disc-pill-link" href="About.html">
+                    <span class="about-btn-inner">About Us</span>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+    </div>
+
+<section class="about-header">
+        <h1>About Us</h1>
+    </section>
+
+    
+    <section class="creator-section">
+        <div class="creator-banner">
+            <img src="assets/ads2.jpg" alt="Clash Of BaNG Team" class="creator-banner-img">
+        </div>
+
+        <div class="creator-content">
+            
+            <div class="envelope-wrap">
+                <div class="envelope" id="envelope">
+                    <div class="envelope-flap"></div>
+                    <div class="envelope-body">
+                        <div class="envelope-seal"></div>
+                    </div>
+                </div>
+                <p class="envelope-hint">Hover to open!</p>
+            </div>
+
+            
+            <div class="creator-card">
+                <h2>Shoutout to Clash Of BaNG Creators</h2>
+                <div class="creator-list">
+                    <div class="creator-item">
+                        <span class="creator-role"🎯></span>
+                        <div>
+                            <strong>Rakuha</strong>
+                            <span>Projek Manager</span>
+                        </div>
+                    </div>
+                    <div class="creator-item">
+                        <span class="creator-role">🎨</span>
+                        <div>
+                            <strong>Hisyam</strong>
+                            <span>UI/UX Designer</span>
+                        </div>
+                    </div>
+                    <div class="creator-item">
+                        <span class="creator-role">💻</span>
+                        <div>
+                            <strong>Maulana</strong>
+                            <span>Developer</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="about-background">
+        <div class="about-bg-content">
+            <h2>Latar Belakang Komunitas</h2>
+            <p>Clash of BaNG lahir dari kecintaan sekelompok pemain terhadap game strategi mobile yang memacu adrenalin. Komunitas ini berkembang dari sebuah grup kecil di Jakarta hingga mencakup anggota dari Bandung dan Sanur.</p>
+            <p>Kami percaya bahwa game bukan hanya soal menang atau kalah, melainkan tentang membangun persahabatan, strategi bersama, dan semangat komunitas yang kuat. Website ini adalah rumah digital kami — tempat berbagi guide, strategi, dan kenangan pertempuran.</p>
+        </div>
+    </section>
+
+    
+    <section class="timeline-section">
+        <div class="timeline-board">
+            <div class="timeline-track">
+                <!-- Node 1 -->
+                <div class="timeline-node">
+                    <div class="node-icon">
+                        <img src="assets/logofinale.png" alt="Era 1" onerror="this.style.display='none'">
+                        <span class="node-symbol">✦</span>
+                    </div>
+                    <div class="node-circle">
+                        <div class="node-year">2019 – 2020</div>
+                        <div class="node-desc">
+                            <p>We start with basic community game website, with basics information of the games</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-line"></div>
+
+                
+                <div class="timeline-node center-node">
+                    <div class="node-icon featured">
+                        <img src="assets/logofinale.png" alt="Clash Bang Logo">
+                    </div>
+                    <div class="node-circle featured-circle">
+                        <div class="node-year">2021 – 2024</div>
+                        <div class="node-desc">
+                            <p>In postcovid era, we slightly upgrade information about game and remake logo of ours website.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-line"></div>
+
+                
+                <div class="timeline-node">
+                    <div class="node-icon">
+                        <img src="assets/logofinale.png" alt="Era 3">
+                    </div>
+                    <div class="node-circle">
+                        <div class="node-year">2025 – 2026</div>
+                        <div class="node-desc">
+                            <p>We recently polish the design further, and remake the logo again, we plan to add join clan fiture in website</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer class="footer">
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <div class="social-icons">
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy &amp; Policy</a></li>
+                <li><a href="#">Parent's Guide</a></li>
+                <li><a href="#">Manage Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+
 </body>
 </html>

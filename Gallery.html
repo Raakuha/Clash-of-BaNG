@@ -12,184 +12,331 @@
 </head>
 <body>
     <nav class="navbar">
-        <button class="Logo"><a href="Home.html">
-            <img class="Logo" src="assets/logofinale.png" alt="Ini adalah logo">
+        <button class="Logo-btn"><a href="Home.html">
+            <img class="Logo" src="assets/logofinale.png" alt="Clash Of BaNG Logo">
         </a></button>
         <ul class="menu_page">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+        <div class="disc-wrap" id="discWrap">
+            <div class="disc" id="disc">
+                <div class="disc-label" id="discLabel">Log-in</div>
+            </div>
+            <div class="disc-controls">
+                <button class="disc-prev" id="discPrev" aria-label="Prev">&#8739;&#9664;</button>
+                <button class="disc-next" id="discNext" aria-label="Next">&#9654;&#8739;</button>
+            </div>
+            <div class="disc-pill">
+                <a class="disc-pill-link" href="About.html">
+                    <span class="about-btn-inner">About Us</span>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
+    </nav>
+ <div class="mobile-menu" id="mobileMenu">
+        <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="Register.html">Register</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Troops.html">Troops</a></li>
         </ul>
-    </nav>
+    </div>
 
+  
     <div class="gallery-header">
         <h1>Gallery</h1>
         <p>Koleksi troops dan heroes dalam Clash Of BaNG</p>
     </div>
 
-    <div class="gallery-grid">
-
-        <div class="gallery-card">
-            <img src="assets/troops/Archer_info.jpg" alt="Archer">
-            <div class="gallery-info">
-                <h3>Archer</h3>
-                <p>Pasukan jarak jauh yang gesit, andalan untuk menyerang dari kejauhan dengan panah.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Baby_Dragon_info.jpg" alt="Baby Dragon">
-            <div class="gallery-info">
-                <h3>Baby Dragon</h3>
-                <p>Naga muda yang menyemburkan api. Saat sendirian, kekuatannya meningkat drastis.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Barbarian_info.jpg" alt="Barbarian">
-            <div class="gallery-info">
-                <h3>Barbarian</h3>
-                <p>Pasukan jarak dekat yang tangguh dan murah. Tulang punggung setiap serangan darat.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Dragon_info.jpg" alt="Dragon">
-            <div class="gallery-info">
-                <h3>Dragon</h3>
-                <p>Naga dewasa yang menyerang udara dan darat sekaligus dengan semburan api yang kuat.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Electro_Dragon_info.jpg" alt="Electro Dragon">
-            <div class="gallery-info">
-                <h3>Electro Dragon</h3>
-                <p>Naga listrik yang menyerang dengan rantai petir, bisa mengenai beberapa target sekaligus.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Electro_Titan_info.jpg" alt="Electro Titan">
-            <div class="gallery-info">
-                <h3>Electro Titan</h3>
-                <p>Raksasa bertenaga listrik dengan HP tinggi, melindungi pasukan di belakangnya.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Giant_info.jpg" alt="Giant">
-            <div class="gallery-info">
-                <h3>Giant</h3>
-                <p>Raksasa bertahan tinggi yang selalu menyerang pertahanan musuh sebagai tameng utama.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Goblin_info.jpg" alt="Goblin">
-            <div class="gallery-info">
-                <h3>Goblin</h3>
-                <p>Pasukan tercepat yang fokus menyerang sumber daya. Ideal untuk farming gold dan elixir.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Healer_info.jpg" alt="Healer">
-            <div class="gallery-info">
-                <h3>Healer</h3>
-                <p>Malaikat penyembuh yang memulihkan HP pasukan darat secara terus-menerus saat pertempuran.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Hog_Rider_info.jpg" alt="Hog Rider">
-            <div class="gallery-info">
-                <h3>Hog Rider</h3>
-                <p>Penunggang babi yang melompati tembok dan langsung menyerang pertahanan musuh.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Meteor_Golem_info.jpg" alt="Meteor Golem">
-            <div class="gallery-info">
-                <h3>Meteor Golem</h3>
-                <p>Golem berbatu yang sangat kuat, meledak saat mati dan merusak area sekitarnya.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Miner_info.jpg" alt="Miner">
-            <div class="gallery-info">
-                <h3>Miner</h3>
-                <p>Penggali bawah tanah yang muncul di mana saja, menghindari jebakan dan tembok musuh.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/P.E.K.K.A_info.jpg" alt="P.E.K.K.A">
-            <div class="gallery-info">
-                <h3>P.E.K.K.A</h3>
-                <p>Mesin perang berlapis baja dengan damage tertinggi, mampu menghancurkan pertahanan apapun.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Root_Rider_info.jpg" alt="Root Rider">
-            <div class="gallery-info">
-                <h3>Root Rider</h3>
-                <p>Penunggang akar pohon yang menghancurkan tembok dan pertahanan dengan kekuatan alam.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Thrower_info.jpg" alt="Thrower">
-            <div class="gallery-info">
-                <h3>Thrower</h3>
-                <p>Pasukan yang melempar bom besar dari jarak jauh dengan area damage yang luas.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Wall_Breaker_info.jpg" alt="Wall Breaker">
-            <div class="gallery-info">
-                <h3>Wall Breaker</h3>
-                <p>Pasukan berani mati yang khusus menghancurkan tembok agar pasukan lain bisa masuk.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Wizard_info.jpg" alt="Wizard">
-            <div class="gallery-info">
-                <h3>Wizard</h3>
-                <p>Penyihir dengan area damage tinggi, efektif melawan gerombolan pasukan musuh sekaligus.</p>
-            </div>
-        </div>
-
-        <div class="gallery-card">
-            <img src="assets/troops/Yeti_info.jpg" alt="Yeti">
-            <div class="gallery-info">
-                <h3>Yeti</h3>
-                <p>Makhluk salju besar yang membawa Yetimite kecil, makin berbahaya saat terluka.</p>
-            </div>
-        </div>
-
+   
+    <div class="gallery-tabs">
+        <button class="tab-btn active" data-tab="all">ALL</button>
+        <button class="tab-btn" data-tab="troops">Troops</button>
+        <button class="tab-btn" data-tab="heroes">Heroes</button>
+        <button class="tab-btn" data-tab="special">Special Art</button>
     </div>
 
+    
+    <div class="gallery-masonry" id="tab-all">
+        <div class="gallery-grid-inner">
+
+            <div class="masonry-item large" data-cat="troops">
+                <img src="assets/galery/pekka.png" alt="Pekka">
+                <div class="masonry-overlay">
+                    <h3>Pekka (Troops)</h3>
+                    <p>World's most cool and mysterious Troops, what actually inside mask?</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="special">
+                <img src="assets/galery/special_art_1.png" alt="Clash Of BaNG Special Art">
+                <div class="masonry-overlay">
+                    <h3>Clash Of BaNG Official Special Art</h3>
+                    <p>Event Cyberpunk Style Coming soon!</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="troops">
+                <img src="assets/galery/skeleton.png" alt="Skeleton">
+                <div class="masonry-overlay">
+                    <h3>Skeleton (Troops)</h3>
+                    <p>Bomb-Specialist, useful for break tower or wall defense in enemy base.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item tall" data-cat="heroes">
+                <img src="assets/galery/barbarian_king.png" alt="Barbarian King">
+                <div class="masonry-overlay">
+                    <h3>Barbarian KING (HERO)</h3>
+                    <p>"Biggest and bravest of all barbarians, this colossal menace soaks up huge amounts of damage and smashes anything in his path with his sword."</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="troops">
+                <img src="assets/galery/stone_golem.png" alt="Stone Golem">
+                <div class="masonry-overlay">
+                    <h3>Stone Golem</h3>
+                    <p>The mighty Golem loves to soak up damage! When destroyed, it explodes and splits into Golemites.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item wide" data-cat="special">
+                <img src="assets/galery/anniversary_art.png" alt="Anniversary Art">
+                <div class="masonry-overlay">
+                    <h3>Special Arts for First Anniversary Clash Of BaNG</h3>
+                    <p>"One year together, one year of fighting! Happy first anniversary, Clash of BaNG! #ClashOfBaNG #Anniversary"</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="troops">
+                <img src="assets/galery/barbarian.png" alt="Barbarian">
+                <div class="masonry-overlay">
+                    <h3>Barbarian (Troops)</h3>
+                    <p>Backbone of any attack. Cheap and reliable melee unit.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="heroes">
+                <img src="assets/galery/archer_queen.png" alt="Archer Queen">
+                <div class="masonry-overlay">
+                    <h3>Archer Queen (Hero)</h3>
+                    <p>The undisputed queen of ranged combat.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="troops">
+                <img src="assets/galery/hog_rider.png" alt="Hog Rider">
+                <div class="masonry-overlay">
+                    <h3>Hog Rider (Troops)</h3>
+                    <p>Leaps over walls and targets defenses directly.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="troops">
+                <img src="assets/galery/dragon.png" alt="Dragon">
+                <div class="masonry-overlay">
+                    <h3>Dragon (Troops)</h3>
+                    <p>Powerful flying troop that breathes fire, targeting air and ground.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="special">
+                <img src="assets/galery/fan_art_1.png" alt="Fan Art">
+                <div class="masonry-overlay">
+                    <h3>Community Fan Art</h3>
+                    <p>Created by our amazing community members.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item" data-cat="heroes">
+                <img src="assets/galery/grand_warden.png" alt="Grand Warden">
+                <div class="masonry-overlay">
+                    <h3>Grand Warden (Hero)</h3>
+                    <p>An eternal guardian who supports troops with an immortality aura.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="gallery-masonry hidden" id="tab-troops">
+        <div class="gallery-grid-inner">
+
+            <div class="masonry-item large">
+                <img src="assets/galery/pekka.png" alt="Pekka">
+                <div class="masonry-overlay">
+                    <h3>Pekka (Troops)</h3>
+                    <p>World's most cool and mysterious Troops, what actually inside mask?</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/barbarian.png" alt="Barbarian">
+                <div class="masonry-overlay">
+                    <h3>Barbarian (Troops)</h3>
+                    <p>Backbone of any attack. Cheap and reliable melee unit.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/skeleton.png" alt="Skeleton">
+                <div class="masonry-overlay">
+                    <h3>Skeleton (Troops)</h3>
+                    <p>Bomb-Specialist, useful for breaking tower or wall defense.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/stone_golem.png" alt="Stone Golem">
+                <div class="masonry-overlay">
+                    <h3>Stone Golem</h3>
+                    <p>Explodes into Golemites when destroyed.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/hog_rider.png" alt="Hog Rider">
+                <div class="masonry-overlay">
+                    <h3>Hog Rider (Troops)</h3>
+                    <p>Leaps over walls and targets defenses.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/dragon.png" alt="Dragon">
+                <div class="masonry-overlay">
+                    <h3>Dragon (Troops)</h3>
+                    <p>Powerful flying troop that breathes fire.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/wizard.png" alt="Wizard">
+                <div class="masonry-overlay">
+                    <h3>Wizard (Troops)</h3>
+                    <p>Area damage specialist, deadly against groups.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/giant.png" alt="Giant">
+                <div class="masonry-overlay">
+                    <h3>Giant (Troops)</h3>
+                    <p>High-HP tank that charges enemy defenses.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="gallery-masonry hidden" id="tab-heroes">
+        <div class="gallery-grid-inner">
+
+            <div class="masonry-item large">
+                <img src="assets/galery/barbarian_king.png" alt="Barbarian King">
+                <div class="masonry-overlay">
+                    <h3>Barbarian KING (HERO)</h3>
+                    <p>"Biggest and bravest of all barbarians, this colossal menace soaks up huge amounts of damage."</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/archer_queen.png" alt="Archer Queen">
+                <div class="masonry-overlay">
+                    <h3>Archer Queen (Hero)</h3>
+                    <p>Undisputed queen of ranged combat.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/grand_warden.png" alt="Grand Warden">
+                <div class="masonry-overlay">
+                    <h3>Grand Warden (Hero)</h3>
+                    <p>Supports troops with an immortality aura.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/royal_champion.png" alt="Royal Champion">
+                <div class="masonry-overlay">
+                    <h3>Royal Champion (Hero)</h3>
+                    <p>Spear-throwing hero who jumps over walls.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    
+    <div class="gallery-masonry hidden" id="tab-special">
+        <div class="gallery-grid-inner">
+
+            <div class="masonry-item large">
+                <img src="assets/galery/special_art_1.png" alt="Clash Of BaNG Special Art">
+                <div class="masonry-overlay">
+                    <h3>Clash Of BaNG Official Special Art</h3>
+                    <p>Event Cyberpunk Style Coming soon!</p>
+                </div>
+            </div>
+
+            <div class="masonry-item wide">
+                <img src="assets/galery/anniversary_art.png" alt="Anniversary Art">
+                <div class="masonry-overlay">
+                    <h3>Special Arts for First Anniversary Clash Of BaNG</h3>
+                    <p>"One year together, one year of fighting! #ClashOfBaNG #Anniversary"</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/fan_art_1.png" alt="Fan Art 1">
+                <div class="masonry-overlay">
+                    <h3>Community Fan Art</h3>
+                    <p>Created by our amazing community members.</p>
+                </div>
+            </div>
+
+            <div class="masonry-item">
+                <img src="assets/galery/fan_art_2.png" alt="Fan Art 2">
+                <div class="masonry-overlay">
+                    <h3>Clan War Artwork</h3>
+                    <p>Epic battle scene from the great Clan War of 2025.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+  
     <footer class="footer">
-        <div class="footer-content">
-            <p class="footer-title">Clash Of BaNG</p>
-            <p>Website komunitas Clash Of BaNG</p>
-            <ul class="footer-links">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Troops.html">Troops</a></li>
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <div class="social-icons">
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy &amp; Policy</a></li>
+                <li><a href="#">Parent's Guide</a></li>
+                <li><a href="#">Manage Cookies</a></li>
             </ul>
-            <p class="footer-copy">© 2024 Clash Of BaNG. All rights reserved.</p>
         </div>
     </footer>
+
+    <script src="script/main.js"></script>
+  
 </body>
 </html>

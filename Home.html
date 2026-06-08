@@ -14,106 +14,180 @@
 
 <body>
     <nav class="navbar">
-            <button class="Logo"><a href="Home.html">
-                <img class="Logo" src="assets/logofinale.png" alt="Ini adalah logo">
-            </a></button>
-        
-            
-        
-        
-            <ul class="menu_page">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Troops.html">Troops</a></li>
-            </ul>
-        
-            
-
+        <button class="Logo-btn"><a href="Home.html">
+            <img class="Logo" src="assets/logofinale.png" alt="Clash Of BaNG Logo">
+        </a></button>
+        <ul class="menu_page">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+        <div class="disc-wrap" id="discWrap">
+            <div class="disc" id="disc">
+                <div class="disc-label" id="discLabel">Log-in</div>
+            </div>
+            <div class="disc-controls">
+                <button class="disc-prev" id="discPrev" aria-label="Prev">&#8739;&#9664;</button>
+                <button class="disc-next" id="discNext" aria-label="Next">&#9654;&#8739;</button>
+            </div>
+            <div class="disc-pill">
+                <a class="disc-pill-link" href="About.html">
+                    <span class="about-btn-inner">About Us</span>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
-    <div class="Title-home">
-        <h1>Clash Of BaNG</h1>
-    </div>
-           <div class="carousel">
-                <div class="carouselContainer">
-                    <div class="Ads-slide">
-                         <img src="assets/ads1.jpg" alt="ads1"> 
 
-                    </div>
-                    <div class="Ads-slide">
-                        <img src="assets/ads2.jpg" alt="ads2">
-
-                    </div>
-                    <div class="Ads-slide">
-                        <img src="assets/ads3.jpg" alt="ads3">
-
-                    </div>
-                    <div class="Ads-slide">
-                        <img src="assets/ads4.jpg" alt="ads3">
-
-                    </div>
-                
-                </div>
-                    <div class="btn-carousel">
-                        <button class="prev"><</button>
-                        <button class="next">></button>
-                    </div>
-                    
-               
-                   
-                    
-               
-
-            </div>
-            <div class="Popular-troops">
-                <div class="title-PT">
-                    <h1>Trending Troops</h1>
-                </div>
-                
-                <div class="trendContainer">
-                    <div class="Trends">
-                        <img src="assets/Barbarian.jpg" alt="barbarian.jpg">
-                    </div>
-                    <div class="Trends">
-                        <img src="assets/wizard.jpg" alt="barbarian.jpg">
-                    </div>
-                    <div class="Trends">
-                        <img src="assets/skeleton.jpg" alt="barbarian.jpg">
-                    </div>
-                    <div class="Trends">
-                        <img src="assets/pekka.jpg" alt="barbarian.jpg">
-                    </div>
-                    <div class="Trends">
-                        <img src="assets/orc.jpg" alt="barbarian.jpg">
-                    </div>
-                    <div class="Trends">
-                        <img src="assets/ice.jpg" alt="barbarian.jpg">
-                    </div>
-
-
-                </div>     
-                <div class="search_troops"> 
-                    <input type="text" placeholder="Cari info troops..">
-                    <button class="search-btn">Search !</button>
-                </div>
-
-            </div>
-     
-</body>
-<footer class="footer">
-    <div class="footer-kontener">
-        <p class="footer-title">Clash Of BaNG</p>
-        <p>Website komunitas Clash Of BaNG</p>
-        <ul class="footer-links">
+  
+    <div class="mobile-menu" id="mobileMenu">
+        <ul>
             <li><a href="Home.html">Home</a></li>
             <li><a href="Gallery.html">Gallery</a></li>
             <li><a href="Register.html">Register</a></li>
             <li><a href="About.html">About</a></li>
             <li><a href="Troops.html">Troops</a></li>
         </ul>
-        <p class="footer-copy">© 2026 Clash Of BaNG. All rights reserved.</p>
     </div>
-</footer>
+
+
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup-box">
+            <button class="popup-close" id="popupClose">✕</button>
+            <div class="popup-badge">WHAT'S NEW?</div>
+            <img src="assets/ads1.jpg" alt="Game Update" class="popup-img">
+            <h2 class="popup-title">New Update is Here!</h2>
+            <p class="popup-desc">New troops, new heroes, and exciting events await. Update now and dominate the battlefield!</p>
+            <button class="popup-cta" id="popupCta">Lihat Update →</button>
+        </div>
+    </div>
+
+    
+
+    
+    <section class="hero-section">
+        <div class="hero-castle">
+            <img src="assets/ads1.jpg" alt="Castle" class="hero-castle-img">
+        </div>
+        <div class="hero-title-box">
+            <h1 class="hero-title">Clash Of BaNG</h1>
+        </div>
+    </section>
+
+   
+    <section class="carousel-section">
+        <div class="carousel-outer">
+            <button class="prev">&#8739;&#9664;</button>
+            <div class="carousel-wrapper">
+                <div class="carousel">
+                    <div class="carouselContainer">
+                        <div class="Ads-slide"><img src="assets/ads1.jpg" alt="Update 1"></div>
+                        <div class="Ads-slide"><img src="assets/ads2.jpg" alt="Update 2"></div>
+                        <div class="Ads-slide"><img src="assets/ads3.jpg" alt="Update 3"></div>
+                        <div class="Ads-slide"><img src="assets/ads4.jpg" alt="Update 4"></div>
+                    </div>
+                </div>
+                <div class="whats-new-tag">What's New?</div>
+            </div>
+            <button class="next">&#9654;&#8739;</button>
+        </div>
+
+       
+        <div class="hero-cta-box">
+            <div class="cta-text">
+                <h2>Lead Your Clan to Victory!</h2>
+                <p>Join the international fray that is Clash of BaNG. Customize your village, build an army and crush your opponents. Like using friendship to strike fear into your enemies? Join a Clan, or establish a Clashing legacy by creating your own. The choice is yours in this millions-strong community of Barbarians. Download for free and BaNG on, Chief!</p>
+            </div>
+            <div class="cta-stores">
+                <a href="#" class="store-btn">
+                    <span class="store-icon">▶</span>
+                    <div>
+                        <small>Answer the call of mustache on</small>
+                        <strong>Google Play!</strong>
+                    </div>
+                </a>
+                <a href="#" class="store-btn store-apple">
+                    <span class="store-icon apple-icon">&#63743;</span>
+                    <div>
+                        <small>Download on the</small>
+                        <strong>Apple Store</strong>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+  
+    <section class="Popular-troops">
+        <div class="title-PT">
+            <h2>Trending Troops</h2>
+        </div>
+        <div class="trendContainer">
+            <div class="trend-card">
+                <div class="trend-card-img">
+                    <img src="assets/Barbarian.jpg" alt="Barbarian">
+                </div>
+                <div class="trend-card-info">
+                    <h3>Barbarian</h3>
+                    <p>A tough and inexpensive close-range unit. The backbone of any emergency assault. Has standard attack and defense stats.</p>
+                    <a href="Troops.html" class="more-info-btn">More info</a>
+                </div>
+            </div>
+            <div class="trend-card">
+                <div class="trend-card-img">
+                    <img src="assets/troops/Archer_info.jpg" alt="Archer">
+                </div>
+                <div class="trend-card-info">
+                    <h3>Archer</h3>
+                    <p>Agile ranged units, ideal for attacking from a distance with arrows, have fairly high attack power but below-average defense.</p>
+                    <a href="Troops.html" class="more-info-btn">More info</a>
+                </div>
+            </div>
+            <div class="trend-card">
+                <div class="trend-card-img">
+                    <img src="assets/troops/Goblin_info.jpg" alt="Goblin">
+                </div>
+                <div class="trend-card-info">
+                    <h3>Goblin</h3>
+                    <p>The fastest troop that focuses on attacking resources. Ideal for farming gold and elixir.</p>
+                    <a href="Troops.html" class="more-info-btn">More info</a>
+                </div>
+            </div>
+        </div>
+        <div class="more-troops-wrap">
+            <a href="Troops.html" class="more-troops-btn">More Troops ?</a>
+        </div>
+        <div class="search_troops">
+            <input type="text" id="searchInput" placeholder="Cari info troops..">
+            <button class="search-btn" id="searchBtn">Search!</button>
+        </div>
+    </section>
+
+
+    <footer class="footer">
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <div class="social-icons">
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy &amp; Policy</a></li>
+                <li><a href="#">Parent's Guide</a></li>
+                <li><a href="#">Manage Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+</body>
+
     <script src="script/main.js" ></script>
 </html>

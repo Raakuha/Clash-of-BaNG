@@ -13,23 +13,338 @@
 </head>
 <body>
     <nav class="navbar">
-            <button class="Logo"><a href="Home.html">
-                <img class="Logo" src="assets/logofinale.png" alt="Ini adalah logo">
-            </a></button>
-        
-            
-        
-        
-            <ul class="menu_page">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Troops.html">Troops</a></li>
-            </ul>
-        
-            
-
+        <button class="Logo-btn"><a href="Home.html">
+            <img class="Logo" src="assets/logofinale.png" alt="Clash Of BaNG Logo">
+        </a></button>
+        <ul class="menu_page">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+        <div class="disc-wrap" id="discWrap">
+            <div class="disc" id="disc">
+                <div class="disc-label" id="discLabel">Log-in</div>
+            </div>
+            <div class="disc-controls">
+                <button class="disc-prev" id="discPrev" aria-label="Prev">&#8739;&#9664;</button>
+                <button class="disc-next" id="discNext" aria-label="Next">&#9654;&#8739;</button>
+            </div>
+            <div class="disc-pill">
+                <a class="disc-pill-link" href="About.html">
+                    <span class="about-btn-inner">About Us</span>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+<div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+    </div>
+
+<section class="troops-section">
+        <div class="troops-board">
+            <div class="board-header">
+                <span class="board-deco">❧</span>
+                <div>
+                    <h1>TROOPS LIST BOARD</h1>
+                    <p>— Clash of BaNG — Troops Registered —</p>
+                </div>
+                <span class="board-deco">❧</span>
+            </div>
+
+            <div class="troops-grid" id="troopsGrid">
+
+                
+                <div class="troop-card" data-name="Barbarian">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/Barbarian.jpg" alt="Barbarian">
+                        <div class="card-label">
+                            <h3>BARBARIAN</h3>
+                            <p>A tough and inexpensive close-range unit. The backbone of any emergency assault.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('barbarian')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>BARBARIAN</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>300</td></tr>
+                            <tr><td>⚔️ DPS</td><td>75</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Medium</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Any</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Archer">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Archer_info.jpg" alt="Archer">
+                        <div class="card-label">
+                            <h3>ARCHER</h3>
+                            <p>Agile ranged units, ideal for attacking from distance with arrows, fairly high attack.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('archer')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>ARCHER</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>190</td></tr>
+                            <tr><td>⚔️ DPS</td><td>55</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Fast</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Any</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Goblin">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Goblin_info.jpg" alt="Goblin">
+                        <div class="card-label">
+                            <h3>GOBLIN</h3>
+                            <p>The fastest troop that focuses on attacking resources. Ideal for farming gold and elixir.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('goblin')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>GOBLIN</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>125</td></tr>
+                            <tr><td>⚔️ DPS</td><td>65</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Very Fast</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Resources</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Giant">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Giant_info.jpg" alt="Giant">
+                        <div class="card-label">
+                            <h3>GIANT</h3>
+                            <p>A towering defensive giant who always charges the enemy's defense as the main shield.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('giant')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>GIANT</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>3,500</td></tr>
+                            <tr><td>⚔️ DPS</td><td>90</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Slow</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Defenses</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Electro">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Electro_Dragon_info.jpg" alt="Electro Dragon">
+                        <div class="card-label">
+                            <h3>ELECTRO</h3>
+                            <p>A massive electric-powered giant that annihilates troops around it with chain lightning.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('electro')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>ELECTRO DRAGON</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>4,200</td></tr>
+                            <tr><td>⚔️ DPS</td><td>220</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Chain</td></tr>
+                            <tr><td>🏃 Speed</td><td>Medium</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Any</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Hog Rider">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Hog_Rider_info.jpg" alt="Hog Rider">
+                        <div class="card-label">
+                            <h3>HOG-RIDER</h3>
+                            <p>A pig rider who leaps over the wall and immediately attacks the enemy's defenses.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('hogrider')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>HOG RIDER</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>1,200</td></tr>
+                            <tr><td>⚔️ DPS</td><td>180</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Very Fast</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Defenses</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="P.E.K.K.A">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/P.E.K.K.A_info.jpg" alt="P.E.K.K.A">
+                        <div class="card-label">
+                            <h3>PEKKA</h3>
+                            <p>An all-time war machine with the highest damage output, capable of destroying any defense.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('pekka')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>P.E.K.K.A</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>7,000</td></tr>
+                            <tr><td>⚔️ DPS</td><td>650</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Single</td></tr>
+                            <tr><td>🏃 Speed</td><td>Slow</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Any</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Healer">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Healer_info.jpg" alt="Healer">
+                        <div class="card-label">
+                            <h3>HEALER</h3>
+                            <p>A special unit of suicide soldiers tasked with destroying the wall so that other troops could pass.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('healer')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>HEALER</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>1,600</td></tr>
+                            <tr><td>💊 Heal/s</td><td>100</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Heal</td></tr>
+                            <tr><td>🏃 Speed</td><td>Fast</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Friendly</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+                
+                <div class="troop-card" data-name="Wizard">
+                    <div class="card-clip"></div>
+                    <div class="card-front">
+                        <img src="assets/troops/Wizard_info.jpg" alt="Wizard">
+                        <div class="card-label">
+                            <h3>WIZARD</h3>
+                            <p>A mage with a wide area of effect, effective against groups of enemy troops at once.</p>
+                        </div>
+                        <button class="more-info-btn" onclick="openTroopModal('wizard')">More info</button>
+                    </div>
+                    <div class="card-stats">
+                        <h4>WIZARD</h4>
+                        <table>
+                            <tr><td>❤️ Hitpoints</td><td>400</td></tr>
+                            <tr><td>⚔️ DPS</td><td>250</td></tr>
+                            <tr><td>🎯 Damage Type</td><td>Splash</td></tr>
+                            <tr><td>🏃 Speed</td><td>Medium</td></tr>
+                            <tr><td>🎖️ Fav. Target</td><td>Any</td></tr>
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    
+    <div class="troop-modal-overlay hidden" id="troopModalOverlay">
+        <div class="troop-modal-figma" id="troopModal">
+            <button class="modal-close" id="modalClose">✕</button>
+
+            
+            <button class="modal-nav modal-nav-prev" id="modalNavPrev" aria-label="Previous">&#8739;&#9664;</button>
+            <button class="modal-nav modal-nav-next" id="modalNavNext" aria-label="Next">&#9654;&#8739;</button>
+
+            
+            <div class="modal-section" id="modalSec0">
+                <div class="modal-board-title" id="modalTitle0">Statistik Troops</div>
+                <div class="modal-table-wrap">
+                    <table class="modal-stat-lvl" id="modalTable0">
+                        <thead>
+                            <tr>
+                                <th>Level</th><th>Damage</th><th>HP</th>
+                                <th>Cooldown</th><th>Level Laboratorium</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modalTbody0"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="modal-section hidden" id="modalSec1">
+                <div class="modal-board-title" id="modalTitle1">Statistik Troops</div>
+                <div class="modal-table-wrap">
+                    <table class="modal-stat-lvl" id="modalTable1">
+                        <thead>
+                            <tr>
+                                <th>Level</th><th>Damage</th><th>HP</th>
+                                <th>Cooldown</th><th>Level Laboratorium</th>
+                            </tr>
+                        </thead>
+                        <tbody id="modalTbody1"></tbody>
+                    </table>
+                </div>
+            </div>
+
+            
+            <div class="modal-section hidden" id="modalSec2">
+                <div class="modal-board-title">Upgrade Troops</div>
+                <div class="modal-upgrade-grid" id="modalUpgradeGrid"></div>
+            </div>
+        </div>
+    </div>
+
+    
+
+    <footer class="footer">
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <div class="social-icons">
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy &amp; Policy</a></li>
+                <li><a href="#">Parent's Guide</a></li>
+                <li><a href="#">Manage Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+
 </body>
 </html>
