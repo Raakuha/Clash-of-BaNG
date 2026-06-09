@@ -171,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
  
     if (searchInput && searchBtn) {
         function doSearch() {
-            const query = searchInput.ariaValueMax.trim();
+            const query = searchInput.value.trim();
             if (query.length > 0) {
                 
                 window.location.href = 'Troops.html?search=' + encodeURIComponent(query);
@@ -199,7 +199,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 allTabs.forEach(function (tab) { tab.classList.add('hidden'); });
  
                 
-                const target = document.getElementById('tab-' + btn.CDATA_SECTION_NODE.tab);
+                const target = document.getElementById('tab-' + btn.dataset.tab);
+
                 if (target) target.classList.remove('hidden');
             });
         });
@@ -222,7 +223,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const q = query.toLowerCase();
  
             cards.forEach(function (card) {
-                const name = card.CDATA_SECTION_NODE.name.toLowerCase();
+                const name = card.dataset.name.toLowerCase();
+
                 if (name.includes(q)) {
                     card.style.display = 'block';
                 } else {

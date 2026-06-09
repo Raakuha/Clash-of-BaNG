@@ -12,24 +12,154 @@
     <script src="script/main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-            <button class="Logo"><a href="Home.html">
-                <img class="Logo" src="assets/logofinale.png" alt="Ini adalah logo">
-            </a></button>
-        
-            
-        
-        
-            <ul class="menu_page">
-                <li><a href="Home.html">Home</a></li>
-                <li><a href="Gallery.html">Gallery</a></li>
-                <li><a href="Register.html">Register</a></li>
-                <li><a href="About.html">About</a></li>
-                <li><a href="Troops.html">Troops</a></li>
-            </ul>
-        
-            
-
+ <nav class="navbar">
+        <button class="Logo-btn"><a href="Home.html">
+            <img class="Logo" src="assets/logofinale.png" alt="Clash Of BaNG Logo">
+        </a></button>
+        <ul class="menu_page">
+            <li><a href="Home.html" class="active">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+        <div class="disc-wrap" id="discWrap">
+            <div class="disc" id="disc">
+                <div class="disc-label" id="discLabel">Log-in</div>
+            </div>
+            <div class="disc-controls">
+                <button class="disc-prev" id="discPrev" aria-label="Prev">&#8739;&#9664;</button>
+                <button class="disc-next" id="discNext" aria-label="Next">&#9654;&#8739;</button>
+            </div>
+            <div class="disc-pill">
+                <a class="disc-pill-link" href="About.html">
+                    <span class="about-btn-inner">About Us</span>
+                </a>
+            </div>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+            <span></span><span></span><span></span>
+        </button>
     </nav>
+
+<div class="mobile-menu" id="mobileMenu">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="Register.html">Register</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="Troops.html">Troops</a></li>
+        </ul>
+    </div>
+
+<section class="register-section">
+        <div class="register-castle">
+            <img src="assets/ads1.jpg" alt="Castle" class="castle-bg-img">
+        </div>
+
+        <div class="register-card">
+            <div class="register-card-header">
+                <h1>Clash Of BaNG Community</h1>
+                <p>Bergabunglah dengan komunitas kami dan mulai perjalananmu!</p>
+            </div>
+
+            
+            <div id="registerForm" class="register-form">
+
+                
+                <div class="form-group">
+                    <label for="username">👤 Username / Nama Chief</label>
+                    <input type="text" id="username" placeholder="Masukkan username kamu" autocomplete="off">
+                    <span class="form-error" id="err-username"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="email">✉️ Email</label>
+                    <input type="email" id="email" placeholder="nama@email.com">
+                    <span class="form-error" id="err-email"></span>
+                </div>
+
+              
+                <div class="form-group">
+                    <label for="password">🔒 Password</label>
+                    <div class="password-wrap">
+                        <input type="password" id="password" placeholder="Minimal 8 karakter">
+                        <button type="button" class="toggle-pw" id="togglePw">👁</button>
+                    </div>
+                    <div class="pw-strength-bar"><div class="pw-strength-fill" id="pwStrengthFill"></div></div>
+                    <span class="form-hint" id="pwStrengthLabel">Kekuatan password</span>
+                    <span class="form-error" id="err-password"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="kota">📍 Pusat Komunitas Terdekat</label>
+                    <select id="kota">
+                        <option value="">-- Pilih kota --</option>
+                        <option value="jakarta">Jakarta</option>
+                        <option value="bandung">Bandung</option>
+                        <option value="sanur">Sanur</option>
+                        <option value="other">Kota lain</option>
+                    </select>
+                    <span class="form-error" id="err-kota"></span>
+                </div>
+
+               
+                <div class="form-group">
+                    <label for="alasan">📝 Alasan Bergabung</label>
+                    <textarea id="alasan" rows="4" placeholder="Ceritakan alasanmu bergabung ke komunitas Clash of BaNG..."></textarea>
+                    <span class="char-count" id="charCount">0 / 200 karakter</span>
+                    <span class="form-error" id="err-alasan"></span>
+                </div>
+
+               
+                <div class="form-group checkbox-group">
+                    <label class="checkbox-label">
+                        <input type="checkbox" id="agreeTerms">
+                        <span class="custom-check"></span>
+                        Saya menyetujui <a href="#">Syarat Penggunaan</a> dan <a href="#">Kebijakan Privasi</a>
+                    </label>
+                    <span class="form-error" id="err-terms"></span>
+                </div>
+
+                <button type="button" class="register-submit-btn" id="submitBtn">
+                    ⚔️ Daftar Sekarang
+                </button>
+
+                <p class="login-redirect">Sudah punya akun? <a href="#">Masuk di sini</a></p>
+            </div>
+
+            <div class="register-success hidden" id="registerSuccess">
+                <div class="success-icon">🏆</div>
+                <h2>Selamat Datang, Chief!</h2>
+                <p id="successName">Kamu berhasil bergabung ke komunitas Clash of BaNG.</p>
+                <p>Tim kami akan menghubungi kamu melalui email untuk konfirmasi.</p>
+                <a href="Home.html" class="more-info-btn" style="margin-top:20px;display:inline-block;">Kembali ke Home</a>
+            </div>
+        </div>
+    </section>
+
+  
+
+    <footer class="footer">
+        <div class="footer-social">
+            <p>Follow Us on:</p>
+            <div class="social-icons">
+                <a href="#" aria-label="YouTube"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Instagram"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/instagram.svg" alt="Instagram"></a>
+                <a href="#" aria-label="Facebook"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/facebook.svg" alt="Facebook"></a>
+                <a href="#" aria-label="Discord"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/discord.svg" alt="Discord"></a>
+                <a href="#" aria-label="Twitter"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter"></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <ul class="footer-bottom-links">
+                <li><a href="#">Terms Of Service</a></li>
+                <li><a href="#">Privacy &amp; Policy</a></li>
+                <li><a href="#">Parent's Guide</a></li>
+                <li><a href="#">Manage Cookies</a></li>
+            </ul>
+        </div>
+    </footer>
+    <script src="script/main.js"></script>
+
 </body>
 </html>
